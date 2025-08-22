@@ -1,9 +1,14 @@
-# netlify.toml
+# netlify.toml (en la raíz del repo)
 [build]
+  base = "frontend"        # entra a /frontend para instalar y build
   command = "npm run build"
-  publish = "dist"
+  publish = "dist"         # publica /frontend/dist
 
-# SPA fallback: cualquier ruta → index.html
+# Forzar versión de Node en el build (evita sorpresas)
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA fallback (rutas de Vue)
 [[redirects]]
   from = "/*"
   to = "/index.html"
