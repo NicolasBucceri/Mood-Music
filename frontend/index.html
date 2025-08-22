@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Manifest PWA -->
-    <link rel="manifest" href="/manifest.json" />
+    <!-- =======================
+         🔑 SEO BÁSICO
+    ======================== -->
+    <title>Mood Music — playlists según tu clima</title>
+    <meta name="description" content="Playlists automáticas según el clima de tu ciudad. Rápido, minimalista y pensado para foco total." />
+    <link rel="canonical" href="https://TU-DOMINIO.netlify.app/" />
 
-    <!-- Theme color (UI del navegador) -->
+    <!-- =======================
+         📱 PWA
+    ======================== -->
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#0b0b0f" />
 
     <!-- iOS: instalar a la pantalla de inicio -->
@@ -17,17 +24,59 @@
     <link rel="apple-touch-icon" sizes="167x167" href="/img/MM167x167.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/img/MM152x152.png" />
 
-    <!-- Favicon (logo de ventana) -->
+    <!-- =======================
+         🖼️ ICONOS Y FAVICON
+    ======================== -->
     <link rel="icon" type="image/png" sizes="32x32" href="/img/MM32x32.png" />
-
     <!-- (opcional) compatibilidad vieja -->
     <!-- <link rel="icon" href="/img/favicon.ico" /> -->
 
-    <!-- Iconos (tu CDN) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Iconos (Font Awesome CDN) -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
-    <title>Mood Music</title>
+    <!-- =======================
+         🌐 OPEN GRAPH
+    ======================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://TU-DOMINIO.netlify.app/" />
+    <meta property="og:title" content="Mood Music — playlists según tu clima" />
+    <meta property="og:description" content="Descubrí música alineada con el clima actual. Probalo ahora." />
+    <meta property="og:image" content="https://TU-DOMINIO.netlify.app/og-image.jpg" />
+    <meta property="og:image:alt" content="Vista previa de Mood Music" />
+
+    <!-- =======================
+         🐦 TWITTER CARDS
+    ======================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mood Music — playlists según tu clima" />
+    <meta name="twitter:description" content="Playlists inteligentes por clima. Minimal y veloz." />
+    <meta name="twitter:image" content="https://TU-DOMINIO.netlify.app/og-image.jpg" />
+
+    <!-- =======================
+         📊 STRUCTURED DATA
+    ======================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mood Music",
+      "url": "https://TU-DOMINIO.netlify.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://TU-DOMINIO.netlify.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- (Opcional) Verificación Google Search Console -->
+    <!-- <meta name="google-site-verification" content="TU_CODIGO_DE_VERIFICACION" /> -->
   </head>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
