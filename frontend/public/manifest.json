@@ -1,0 +1,17 @@
+{
+  "name": "Mood Music",
+  "short_name": "MoodMusic",
+  "description": "Clima, música y emoción en una sola app.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0b0f",
+  "theme_color": "#0b0b0f",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/img/MM192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/img/MM256x256.png", "sizes": "256x256", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/img/MM384x384.png", "sizes": "384x384", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/img/MM512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
